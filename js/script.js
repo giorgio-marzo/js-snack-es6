@@ -57,3 +57,20 @@ for(let i=0; i<team.length; i++){
 }
 
 console.log(team);
+
+
+// creo un array di solo nomi squadre e falli
+
+const squadre = [];
+
+for(let i=0; i<team.length; i++){
+
+    let nomiEfalli = {
+        name: team[i].name,
+        falli: team[i].falli
+    }
+
+    squadre.push(nomiEfalli)
+}
+
+console.log(squadre)
