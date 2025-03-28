@@ -40,4 +40,20 @@ const team = [
 
 ]
 
+// genero numeri casuali attraverso una funzione
 
+const generateRandomNumbers = (min, max) => {
+
+    return Math.floor(Math.random() * (max - min) + 1) + min
+
+}
+
+// ciclo l'array per assagnare i  punti e falli casuali 
+
+for(let i=0; i<team.length; i++){
+
+    team[i].punti = generateRandomNumbers(40, 80);
+    team[i].falli = generateRandomNumbers(40, 80);
+}
+
+console.log(team);
